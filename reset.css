@@ -1,0 +1,277 @@
+/* Reset y estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Encabezado y logo */
+header {
+  margin-bottom: 30px;
+  text-align: center;
+  border-bottom: 2px solid #d0d0d0;
+  padding-bottom: 20px;
+}
+
+.logo {
+  height: auto;
+  max-width: 200px;
+  margin: 10px 0 20px;
+  filter: brightness(1);
+}
+
+/* Barra de navegación superior */
+.main-nav {
+  background-color: #ffffff;
+  padding: 15px 0;
+  border-radius: 4px;
+  margin-bottom: 25px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.main-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.main-nav li {
+  margin: 0 25px;
+}
+
+.main-nav a {
+  color: #555;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  padding: 8px 15px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #fff;
+  background-color: #3a6db3;
+}
+
+/* Barra de navegación lateral */
+.secondary-nav {
+  width: 220px;
+  float: left;
+  margin-right: 30px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  padding: 20px 15px;
+  border: 1px solid #ddd;
+}
+
+.secondary-nav ul {
+  list-style: none;
+}
+
+.secondary-nav li {
+  margin-bottom: 15px;
+}
+
+.secondary-nav a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  display: block;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.secondary-nav a:hover {
+  background-color: #e6f0ff;
+  color: #2c5e9e;
+}
+
+/* Contenedor principal */
+.profile-container {
+  margin-left: 260px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 30px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Encabezado del perfil */
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.profile-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-right: 25px;
+  object-fit: cover;
+  border: 3px solid #ccc;
+}
+
+.profile-header h2 {
+  color: #222;
+  font-size: 26px;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+/* Secciones de contenido */
+.details-section, 
+.contact-section, 
+.sales-section {
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ddd;
+}
+
+.details-section:last-child, 
+.contact-section:last-child, 
+.sales-section:last-child {
+  border-bottom: none;
+}
+
+h3 {
+  color: #444;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Detalles del perfil */
+p {
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 15px;
+}
+
+em {
+  font-weight: 500;
+  font-style: normal;
+  color: #333;
+  display: inline-block;
+  width: 80px;
+}
+
+/* Enlaces de contacto */
+a[href^="tel:"], 
+a[href^="mailto:"] {
+  color: #2c5e9e;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a[href^="tel:"]:hover, 
+a[href^="mailto:"]:hover {
+  color: #1c3d70;
+  text-decoration: underline;
+}
+
+/* Botones de acción */
+.action-buttons ul {
+  list-style: none;
+  display: flex;
+  margin-top: 20px;
+}
+
+.action-buttons li {
+  margin-right: 15px;
+}
+
+.Edit, .Flag {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.Edit {
+  color: #fff;
+  background-color: #2c5e9e;
+  border: 1px solid #3a6db3;
+}
+
+.Flag {
+  color: #fff;
+  background-color: #888;
+  border: 1px solid #999;
+}
+
+.Edit:hover {
+  background-color: #3a6db3;
+  border-color: #4a7dc3;
+}
+
+.Flag:hover {
+  background-color: #999;
+  border-color: #aaa;
+}
+
+/* Gráfico de ventas */
+.sales-chart {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  margin-top: 15px;
+}
+
+/* Pie de página */
+.main-footer {
+  clear: both;
+  text-align: center;
+  margin-top: 40px;
+  color: #777;
+  font-size: 14px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.main-footer p {
+  margin-bottom: 8px;
+}
+
+.main-footer a {
+  color: #666;
+  text-decoration: none;
+  margin: 0 12px;
+  transition: color 0.3s ease;
+}
+
+.main-footer a:hover {
+  color: #444;
+  text-decoration: underline;
+}
+
+#copyright {
+  font-size: 13px;
+  color: #999;
+}
